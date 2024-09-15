@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desglosar id etu | Utilidades de soporte técnico</title>
+  <link rel="stylesheet" href="./src/styles/custom.css">
+</head>
+<body>
+  <main class="grow-[1] container-ch my-4 flex flex-col gap-4">
+    
+    <h1 class="text-3xl">Desglosar id etu</h1>
+    
+    <form id="form-id-etu" class="flex flex-col gap-4 text-center p-4 border rounded-md">
+      <p id="id-etu-text" class="hidden"></p>
+      <input type="text" name="id-etu-input" id="id-etu-input" placeholder="Ingresa aquí tu id de etu" autocomplete="off" class="border p-2 rounded-md focus:border-sky-500 focus:outline-none w-[80%] mx-auto">
+      <p class="hidden" id="id-etu-message"></p>
+
+      <section class="flex justify-evenly">
+        <input type="submit" value="Desglosar" id="btn-id-etu-desglosar" class="btn-form bg-sky-500 hover:bg-sky-600 text-slate-50">
+        <button id="btn-id-etu-copiar" class="btn-form bg-teal-500 hover:bg-teal-600 text-slate-50">Copiar</button>
+        <input type="reset" value="Limpiar" id="btn-id-etu-resetear" class="btn-form bg-pink-500 hover:bg-pink-600 text-slate-50">
+      </section>
+    </form>
+  </main>
+  
+
+  <!-- Footer dev -->
+  <footer class="footer-dev">
+    <p>Desarrollado con 💞 por <a href="https://github.com/elmonoska">ElMonoSka</a>.</p>
+  </footer>
+
+  <script type="module" src="./src/scripts/splitId.js"></script>
+</body>
+</html>

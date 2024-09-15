@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ********** CUSTOM PROPERTIES ********** */
+:root {
+  
+}
+/* ********** ********* ********** */
+
+
+
+/* ********** RESET CSS ********** */
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100dvh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+/* Multimedia se adapta al tamaño del contenedor */
+img, audio, video, iframe, canvas, svg, picture {
+  max-width: 100%;
+  height: auto;
+}
+/* Balanceo de los títulos y los párrafos */
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+p {
+  text-wrap: pretty;
+}
+/* ********** ********* ********** */
+
+/* ********** UTILITIES ********** */
+.container-ch {
+    width: clamp(300px, 80ch, 80vw);
+    height: auto;
+    margin-inline: auto;
+}
+.container-vw {
+    width: clamp(300px, 95vw, 95%);
+    height: auto;
+    margin-inline: auto;
+}
+
+/* ********** ********* ********** */
+
+/* ********** SITE STYLES ********** */
+.btn-form {
+  @apply cursor-pointer p-3 border rounded-md transition-colors;
+}
+.footer-dev {
+  @apply bg-slate-950 text-slate-50 grid place-content-center h-[10dvh];
+  a {
+    @apply text-blue-500 transition-colors;
+   &:hover {
+    @apply text-blue-600;
+   } 
+  }
+}
+/* ********** ********* ********** */
